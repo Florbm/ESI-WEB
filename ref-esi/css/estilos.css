@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+header  h1 {
+    margin-bottom: 10px;
+}
+
+#lista-colores {
+    max-width: 1000px;
+    margin: 0 auto;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.color {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* 
+    Actividad en grupo
+    Pensar 4 o 5 palabras relacionadas con la ESI (ejemplo Respeto, Comunicacion, etc)
+    y plasmarlas en una WEB con HTML,CSS Y JAVASCRIPT
+    (pueden ser creativos con el CSS y la estructura)
+
+*/
