@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F0E6;
+    color: #20201E;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 35px;
+}
+
+header h1 {
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+main {
+    padding: 0 20px 50px;
+}
+
+#lista-conceptos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.concepto {
+    width: 265px;
+    max-width: 100%;
+    border: 1px solid #20201E;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.concepto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.concepto h2 {
+    font-family: Impact, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    text-transform: uppercase; 
+    margin: 20px 10px 12px;
+}
+
+
+.concepto p {
+    font-size: 17px;
+    line-height: 1.5; 
+    padding: 0 20px;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 72px;
+    }
+
+    header h2 {
+        font-size: 23px;
+    }
+
+    .concepto {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.concepto {
+    display: block;
+    color: inherit; 
+    text-decoration: none; 
+    transition: transform 0.2s;
+}
+
+
+.concepto:hover {
+    transform: translateY(-5px);
+}
+
+
+.concepto:focus-visible {
+    outline: 3px solid #20201E;
+    outline-offset: 4px;
+}
+
+
+.ver-mas {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.detalle {
+    max-width: 900px;
+    margin: 60px auto 0;
+    padding: 35px;
+    border-top: 2px solid #20201E;
+    scroll-margin-top: 30px;
+}
+
+.detalle h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.detalle p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.detalle:target {
+    background-color: #E8DFF0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .concepto {
+        transition: none;
+    }
+
+    .concepto:hover {
+        transform: none;
+    }
+}
