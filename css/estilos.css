@@ -46,20 +46,23 @@ main {
     margin: 0 auto;
 }
 
+
 .concepto {
     width: 265px;
     max-width: 100%;
+    display: block;
     border: 1px solid #20201E;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
     padding-bottom: 25px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s;
 }
-
 .concepto img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
@@ -144,6 +147,10 @@ html {
 
 .detalle:target {
     background-color: #E8DFF0;
+}
+
+.detalle {
+    padding: 20px;
 }
 
 @media (prefers-reduced-motion: reduce) {
